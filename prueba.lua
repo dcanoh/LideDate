@@ -28,26 +28,26 @@ local date = require 'date'
 io.stdout : write '[OK]\n'
 
 -- -- constructor numerico
-io.stdout : write '- Probando constructor numerico: \n'
+io.stdout : write '\n- Probando constructor numerico: \n'
 
 t = date ( 1996, 2, 29 )
 print ( t.Year, t.Month, t.Day, t.wDay )
 
 -- -- constructor tabla con elementos numericos
-io.stdout : write '- Probando constructor tabla con elementos numericos: \n'
+io.stdout : write '\n- Probando constructor tabla con elementos numericos: \n'
 
 t = date { Year = 1996, Month = 2, Day = 29 }
 print ( 'original   ', t.Year, t.Month, t.Day, t.wDay )
 
 -- -- constructor tabla con elementos string
-io.stdout : write '- Probando constructor tabla con elementos string: \n'
+io.stdout : write '\n- Probando constructor tabla con elementos string: \n'
 
 t = date { Year = "1996", Month = "2", Day = "29" }
 print ( 'original-str', t.Year, t.Month, t.Day, t.wDay )
 
 
 -- -- funciones set..()
-io.stdout : write '- Probando funciones set: \n'
+io.stdout : write '\n- Probando funciones set: \n'
 
 t:setDay  ( t.Day-1 )
 print ( 'less 1 day ', t.Year, t.Month, t.Day, t.wDay )
@@ -60,7 +60,7 @@ t:setMonth( t.Month+1 )
 print ( 'more 1 month', t.Year, t.Month, t.Day, t.wDay )
 
 
-io.stdout : write '- Print all FRIDAY the 13th dates 2000-2010:\n'
+io.stdout : write '\n- Print all FRIDAY the 13th dates 2000-2010:\n'
 
 -- prints all FRIDAY the 13th dates between year 2000 and 2010
 

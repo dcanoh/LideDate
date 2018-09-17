@@ -44,4 +44,4 @@ build_script:
 
 test_script:
 - cd c:\projects\lidedate
-- lide prueba.lua
+- %LIDE_PATH%\bin\windows\x86\lua5.1 prueba.lua
